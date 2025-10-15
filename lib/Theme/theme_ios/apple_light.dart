@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ThemeData appleIOSLightTheme = ThemeData(
   brightness: Brightness.light,
@@ -34,53 +35,53 @@ ThemeData appleIOSLightTheme = ThemeData(
       ),
     ),
   ),
-  textTheme: const TextTheme(
-    displayLarge: TextStyle(
+  textTheme: TextTheme(
+    displayLarge: GoogleFonts.inter(
       fontSize: 96,
       fontWeight: FontWeight.w300,
       color: Color(0xFF000000),
     ),
-    displayMedium: TextStyle(
+    displayMedium: GoogleFonts.inter(
       fontSize: 60,
       fontWeight: FontWeight.w400,
       color: Color(0xFF000000),
     ),
-    displaySmall: TextStyle(
+    displaySmall: GoogleFonts.inter(
       fontSize: 48,
       fontWeight: FontWeight.w400,
       color: Color(0xFF000000),
     ),
-    headlineMedium: TextStyle(
+    headlineMedium: GoogleFonts.inter(
         fontSize: 34,
         fontWeight: FontWeight.w400,
         color: Color(0xFF007AFF),
         letterSpacing: 1.4),
-    headlineSmall: TextStyle(
+    headlineSmall: GoogleFonts.inter(
       fontSize: 24,
       fontWeight: FontWeight.w400,
       color: Color(0xFF000000),
     ),
-    titleLarge: TextStyle(
+    titleLarge: GoogleFonts.inter(
       fontSize: 20,
       fontWeight: FontWeight.w500,
       color: Color(0xFF000000),
     ),
-    bodyLarge: TextStyle(
+    bodyLarge: GoogleFonts.inter(
       fontSize: 16,
       fontWeight: FontWeight.w400,
       color: Color(0xFF000000),
     ),
-    bodyMedium: TextStyle(
+    bodyMedium: GoogleFonts.inter(
       fontSize: 14,
       fontWeight: FontWeight.w400,
       color: Color(0xFF8E8E93), // iOS secondary label
     ),
-    bodySmall: TextStyle(
+    bodySmall: GoogleFonts.inter(
       fontSize: 12,
       fontWeight: FontWeight.w400,
       color: Color(0xFF8E8E93),
     ),
-    labelLarge: TextStyle(
+    labelLarge: GoogleFonts.inter(
       fontSize: 14,
       fontWeight: FontWeight.w500,
       color: Color(0xFF000000),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ThemeData appleIOSDarkTheme = ThemeData(
   brightness: Brightness.dark,
@@ -34,56 +35,56 @@ ThemeData appleIOSDarkTheme = ThemeData(
       ),
     ),
   ),
-  textTheme: const TextTheme(
-    displayLarge: TextStyle(
+  textTheme: TextTheme(
+    displayLarge: GoogleFonts.inter(
       fontSize: 96,
       fontWeight: FontWeight.w300,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    displayMedium: TextStyle(
+    displayMedium: GoogleFonts.inter(
       fontSize: 60,
       fontWeight: FontWeight.w400,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    displaySmall: TextStyle(
+    displaySmall: GoogleFonts.inter(
       fontSize: 48,
       fontWeight: FontWeight.w400,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    headlineMedium: TextStyle(
-      fontSize: 34,
-      fontWeight: FontWeight.w400,
-      color: Color(0xFFFFFFFF),
-    ),
-    headlineSmall: TextStyle(
+    headlineMedium: GoogleFonts.inter(
+        fontSize: 34,
+        fontWeight: FontWeight.w400,
+        color: Color(0xFF007AFF),
+        letterSpacing: 1.4),
+    headlineSmall: GoogleFonts.inter(
       fontSize: 24,
       fontWeight: FontWeight.w400,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    titleLarge: TextStyle(
+    titleLarge: GoogleFonts.inter(
       fontSize: 20,
       fontWeight: FontWeight.w500,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    bodyLarge: TextStyle(
+    bodyLarge: GoogleFonts.inter(
       fontSize: 16,
       fontWeight: FontWeight.w400,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
-    bodyMedium: TextStyle(
+    bodyMedium: GoogleFonts.inter(
       fontSize: 14,
       fontWeight: FontWeight.w400,
       color: Color(0xFF8E8E93),
     ),
-    bodySmall: TextStyle(
+    bodySmall: GoogleFonts.inter(
       fontSize: 12,
       fontWeight: FontWeight.w400,
       color: Color(0xFF8E8E93),
     ),
-    labelLarge: TextStyle(
+    labelLarge: GoogleFonts.inter(
       fontSize: 14,
       fontWeight: FontWeight.w500,
-      color: Color(0xFFFFFFFF),
+      color: const Color(0xFFFFFFFF),
     ),
   ),
 );

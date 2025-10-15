@@ -1,17 +1,16 @@
 import 'package:chat_app/Providers/theme_provider.dart';
+import 'package:chat_app/Screen/Chat/chat_screen.dart';
 import 'package:chat_app/Theme/theme_ios/apple_dark.dart';
 import 'package:chat_app/Theme/theme_ios/apple_light.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:chat_app/Screen/login_screen.dart';
-import 'package:chat_app/Screen/signin_screen.dart';
-import 'package:chat_app/Screen/welcome_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const ProviderScope(child: MyApp()));
 }
-
-enum AppThemeMode { system, light, dark }
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
@@ -25,12 +24,7 @@ class MyApp extends ConsumerWidget {
       darkTheme: appleIOSDarkTheme,
       themeMode: theme.flutterMode,
       title: 'Flutter Chat UI',
-      initialRoute: '/login',
-      routes: {
-        "/": (context) => const WelcomScreen(),
-        "/signin": (context) => const SigninScreen(),
-        "/login": (context) => const LoginScreen(),
-      },
+      home: ChatScreen(),
     );
   }
 }
